@@ -1,6 +1,7 @@
 body {}
 
-.head-image img {
+img.head-image {
     max-width: 100%;
     height: auto;
+    margin: auto;
 }
