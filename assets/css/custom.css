@@ -5,3 +5,7 @@ img.head-image {
     height: auto;
     margin: auto;
 }
+
+iframe {
+    max-width: 100%;
+}
