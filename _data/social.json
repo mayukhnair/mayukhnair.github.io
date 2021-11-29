@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/nairmayukh",
+    "image": "https://simpleicons.org/icons/twitter.svg"
+  },
+  {
+    "name": "Instagram",
+    "link": "https://instagram.com",
+    "image": "https://simpleicons.org/icons/instagram.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "https://facebook.com/mayukhnair",
+    "image": "https://simpleicons.org/icons/facebook.svg"
+  },
+  {
+    "name": "GitHub",
+    "link": "https://github.com/mayukhnair",
+    "image": "https://simpleicons.org/icons/github.svg"
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://linkedin.com/in/mayukhnair",
+    "image": "https://simpleicons.org/icons/linkedin.svg"
+  },
+]

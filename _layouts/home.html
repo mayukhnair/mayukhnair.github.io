@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include heading.html heading=page.heading %}
+<h2 class="text-xl text-gray-600 mt-2">Hi, I'm Mayukh - I currently write code and deploy on the cloud for a living, and have an opinion about anything. This is where you'll find me dumping my thoughts every now and then across any topic. You may find out more about me through the top menu.</h2>
+<main class="py-6">
+  {% for post in site.posts %}
+  <div class="mb-12">
+    {% include summary.html post=post %}
+  </div>
+  {% endfor %}
+</main>

@@ -1,0 +1,27 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Blog"
+    url: "/blog/"
+    weight: 2
+  - name: "About"
+    url: "/about/"
+    weight: 3
+  - name: " "
+    weight: 4
+  - name: "Twitter"
+    url: "https://twitter.com/nairmayukh"
+    weight: 5
+  - name: "Instagram"
+    url: "https://instagram.com/mayukhnair"
+    weight: 6
+  - name: "Facebook"
+    url: "https://facebook.com/mayukhnair"
+    weight: 7
+  - name: "GitHub"
+    url: "https://github.com/mayukhnair"
+    weight: 8
+  - name: "LinkedIn"
+    url: "https://linkedin.com/mayukhnair"
+    weight: 9
