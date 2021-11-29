@@ -82,7 +82,8 @@ jobs:
       run: |
         git config --global user.name '$${{ secrets.GIT_NAME }}'
         git config --global user.email '$${{ secrets.GIT_EMAIL }}'
-        git commit -am "Updated page build push"
+        git add .
+        git commit -m "Updated page build push"
         git push 
 
         
