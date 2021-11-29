@@ -25,15 +25,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: build-files
-    
-#     - name: Set up Ruby
-#     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-#     # change this to (see https://github.com/ruby/setup-ruby#versioning):
-#     # uses: ruby/setup-ruby@v1
-#       uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
-#       with:
-#         ruby-version: ${{ matrix.ruby-version }}
-#         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
         
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
@@ -44,7 +35,7 @@ jobs:
     - run: npm ci
     
     - run: pwd
-    
+  
 #     - name: Cache
 #       uses: actions/cache@v2.1.7
 #       with:
@@ -80,26 +71,8 @@ jobs:
         name: site_files
     - name: "Push to gh-pages branch"
       run: |
-        git config --global user.name '$${{ secrets.GIT_NAME }}'
-        git config --global user.email '$${{ secrets.GIT_EMAIL }}'
+        git config --global user.name '${{ secrets.GIT_NAME }}'
+        git config --global user.email '${{ secrets.GIT_EMAIL }}'
         git add .
         git commit -m "Updated page build push"
         git push 
-
-        
-#     - run: cp -r _site ../
-    
-#     - uses: actions/checkout@v2
-#       with:
-#         ref: gh-pages
-#         token: ${{secrets.PAT}}
-    
-#     - run: mv ../_site/* .
-    
-#     - run: git add .
-    
-#     - run: git commit -m "Updated pages with new build"
-    
-#     - run: git push origin build-files
-    
-#     - run: ls
