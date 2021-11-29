@@ -58,5 +58,19 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && bundle install && bundle exec jekyll build"
+        
+    - run: cp -r _site ../
+    
+    - uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+    
+    - run: mv ../_site/* .
+    
+    - run: git add .
+    
+    - run: git commit -m "Updated pages with new build"
+    
+    - run: git push origin build-files
     
     - run: ls
