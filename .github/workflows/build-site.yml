@@ -7,7 +7,7 @@ name: Build site
 
 on:
   push:
-    branches: [ build-actions ]
+    branches: [ build-files ]
 #   pull_request:
 #     branches: [ "*" ]
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: build-actions
+        ref: build-files
     
 #     - name: Set up Ruby
 #     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
@@ -35,8 +35,6 @@ jobs:
 #         ruby-version: ${{ matrix.ruby-version }}
 #         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     
-    - run: ls /home/runner/work/mayukhnair.github.io
-
     - run: ls /home/runner/work/mayukhnair.github.io/mayukhnair.github.io
     
     - name: Use Node.js ${{ matrix.node-version }}
