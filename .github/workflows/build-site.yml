@@ -10,6 +10,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ "*" ]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -17,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['2.6', '2.7', '3.0']
+        ruby-version: ['3.0']
         node-version: ['14.x']
 
     steps:
@@ -54,5 +55,4 @@ jobs:
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && bundle exec jekyll build"
-    
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && bundle install && bundle exec jekyll build"
