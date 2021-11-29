@@ -33,7 +33,7 @@ jobs:
 #         ruby-version: ${{ matrix.ruby-version }}
 #         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     
-    - run: /home/runner/work/mayukhnair.github.io/mayukhnair.github.io
+    - run: ls /home/runner/work/mayukhnair.github.io/mayukhnair.github.io
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
