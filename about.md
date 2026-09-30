@@ -8,7 +8,7 @@ image: "/assets/images/mayukh-circle.jpg"
 ---
 
 # Who am I?
-Guy who builds data-driven software and sets up cloud infrastructure for that addictive monthly salary. Take that away and I like to read internet journalism and Wikipedia too much, eat all the unhealthy stuff with relish, binge watch YouTube, occasionally cycle or play badminton, and try to finish at least one video game a year.
+Guy who builds data-driven software and cloud infrastructure for that addictive monthly salary. Take that away and I love exploring where's the next good bite in Delhi. I like to read internet journalism and Wikipedia too much, eat all the unhealthy stuff with relish, binge watch YouTube, sweat my pants off running or playing racquet sports, and I try to finish at least one video game a year.
 
 ## Where am I?
 
@@ -29,18 +29,18 @@ Either that, or poor decision making by my parents.
 >
 > *- Invictus, William Ernest Henry*
 
-## Why are you so strongly opinionated online?
+## Something you said online got me pissed and I want to express that to your face
 
-मेरी मर्जी। 
+If it is a failing of my morals or ethics, then I will make it up to you and everybody I didn't mean to hurt but I did end up doing so.
+
+For the rest..... seethe.
 
 ## Nice site. What's the stack?
 
-It's still a hackneyed job underneath. Just to enrich your knowledge and acknowledge the hard work of the devs which made each bit of this site's toolchain possible, here's the list:
+It's a hackneyed job underneath and I think I'll let it be this way in this era of everything being built by AI. To acknowledge the hard work of the unsung devs who made each bit of this site's toolchain possible, here's the list:
 
 - Atlantic theme for jekyll-rb by Zerostatic. I modified it to meet some of my design needs. 
-- Netlify for currently testing & building, because for some reason `bundle install` (Ruby's Bundler) refuses to work on my WSL setup. I don't want to move the site to another platform for now, so I manually have to upload the final built pages from Netlify. This will be replaced soon with GitHub Actions-based deployment.
-- GitHub Pages, hosting my previously dormant website since the last decade. Seeing that all my work revolves around GitHub products, I plan to host it here and keep the files accessible for whoever wants to have a dekko underneath.
-- GitHub Codespaces, for rapid editing and iterations.
+- GitHub Pages, hosting my previously dormant website and now these pages since the last decade. Posts are written as Markdown files on a branch and a GitHub actions workflow automates building the pages you see here. (I did write this and it didn't work, so Claude one-shotted the repair job for it. Thanks, Anthropic, I guess.)
 - Disqus to provide an entire comments & reaction system for the site's posts.
 
 

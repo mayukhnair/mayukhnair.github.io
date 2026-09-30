@@ -55,4 +55,3 @@ And if you've read till here..... thank you for indulging me, and I'll see you a
 
 Oh, and - sign of the times, if checking this blog is too old-school for you (RIP, RSS feeds...), fret not: I am mirroring my posts on to Substack. Sub below, if you please?
 
-<iframe src="https://thopdatalkies.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe>
